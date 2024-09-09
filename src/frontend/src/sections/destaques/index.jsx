@@ -71,7 +71,7 @@ const Destaques = () => {
                     </div>
                   </div>
                   <div className="product-image">
-                    <img src={`./assets/products/${image}`} alt="" />
+                  <img src={`../../src/assets/products/${image}`} alt={image} />
                   </div>
                 </div>
               </SwiperSlide>
