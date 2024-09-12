@@ -2,17 +2,17 @@ export const destaques = [
   {
     id: 1,
     name: 'Tomate (kg)',
-    price: '7,00',
-    image: 'tomate.png',
+    price: '6,00',
+    image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/tomate.png',
     category: 'fruta',
     description:
       'Perfeito para saladas e molhos. Sabor fresco e qualidade em cada mordida.',
   },
   {
     id: 2,
-    name: 'Alface americana (500g)',
+    name: 'Alface (500g)',
     price: '5,00',
-    image: 'alface.png',
+    image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/alface.png',
     category: 'Hortaliça',
     description:
       'Crocrante e ideal para saladas e acompanhamentos. Frescor garantido!',
@@ -20,20 +20,20 @@ export const destaques = [
   {
     id: 3,
     name: 'Laranja (kg)',
-    price: '6,00',
-    image: 'laranja.png',
+    price: '9,00',
+    image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/laranja.png',
     category: 'Fruta',
     description:
-      'Docinha feito mel, ideal para um suco bem geladinho',
+      'Docinha feito mel, ideal para um suco bem geladinho.',
   },
 ];
 
-export const frutas = [
+export const produtos = [
   {
     id: 1,
     name: 'Tomate (kg)',
-    price: '30,00',
-    image: 'tomate.png',
+    price: 6.00,
+    image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/tomate.png',
     category: 'Fruta',
     description:
       'Perfeito para saladas e molhos. Sabor fresco e qualidade em cada mordida.',
@@ -41,97 +41,101 @@ export const frutas = [
   {
     id: 2,
     name: 'Laranja (kg)',
-    price: '30,00',
-    image: 'laranja.png',
+    price: 9.00,
+    image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/laranja.png',
     category: 'Fruta',
     description:
-      'Lorem ipsum dolor sit amet',
+      'Lorem ipsum dolor sit amet.',
   },
   {
     id: 3,
     name: 'Banana (kg)',
-    price: '30,00',
-    image: 'banana.png',
+    price: 9.00,
+    image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/banana.png',
     category: 'Fruta',
     description:
-      'Lorem ipsum dolor sit amet',
+      'Lorem ipsum dolor sit amet.',
   },
   {
     id: 4,
     name: 'Limão (kg)',
-    price: '30,00',
-    image: 'limao.png',
+    price: 6.00,
+    image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/limao.png',
     category: 'Fruta',
     description:
-      'Lorem ipsum dolor sit amet',
+      'Lorem ipsum dolor sit amet.',
   },
-];
-
-export const legumes = [
   {
     id: 5,
-    name: 'Batata (kg)',
-    price: '30,00',
-    image: 'batata.png',
-    category: 'Legume',
+    name: 'Morango (kg)',
+    price: 12.00,
+    image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/morango.png',
+    category: 'Fruta',
     description:
-      'Crocrante e ideal para saladas e acompanhamentos. Frescor garantido!',
+      'Lorem ipsum dolor sit amet.',
   },
+
   {
     id: 6,
-    name: 'Cenoura (kg)',
-    price: '30,00',
-    image: 'cenoura.png',
+    name: 'Batata (kg)',
+    price: 8.00,
+    image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/batata.png',
     category: 'Legume',
     description:
       'Crocrante e ideal para saladas e acompanhamentos. Frescor garantido!',
   },
   {
     id: 7,
-    name: 'Abóbora (kg)',
-    price: '30,00',
-    image: 'abobora.png',
+    name: 'Cenoura (kg)',
+    price: 4.00,
+    image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/cenoura.png',
     category: 'Legume',
     description:
       'Crocrante e ideal para saladas e acompanhamentos. Frescor garantido!',
-  }
-]
-
-export const verduras = [
+  },
   {
     id: 8,
-    name: 'Alface americana (500g)',
-    price: '30,00',
-    image: 'alface.png',
-    category: 'Verdura',
+    name: 'Abóbora (kg)',
+    price: 9.00,
+    image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/abobora.png',
+    category: 'Legume',
     description:
       'Crocrante e ideal para saladas e acompanhamentos. Frescor garantido!',
   },
   {
     id: 9,
-    name: 'Brócolis (kg)',
-    price: '30,00',
-    image: 'brocolis.png',
+    name: 'Alface (500g)',
+    price: 5.00,
+    image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/alface.png',
     category: 'Verdura',
     description:
       'Crocrante e ideal para saladas e acompanhamentos. Frescor garantido!',
   },
   {
     id: 10,
-    name: 'Couve (kg)',
-    price: '30,00',
-    image: 'couve.png',
+    name: 'Brócolis (kg)',
+    price: 8.00,
+    image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/brocolis.png',
     category: 'Verdura',
     description:
       'Crocrante e ideal para saladas e acompanhamentos. Frescor garantido!',
   },
   {
     id: 11,
-    name: 'Alface americana (500g)',
-    price: '30,00',
-    image: 'alface.png',
+    name: 'Couve (kg)',
+    price: 4.00,
+    image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/couve.png',
     category: 'Verdura',
     description:
       'Crocrante e ideal para saladas e acompanhamentos. Frescor garantido!',
   },
-]
+  {
+    id: 12,
+    name: 'Alface (500g)',
+    price: 5.00,
+    image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/alface.png',
+    category: 'Verdura',
+    description:
+      'Crocrante e ideal para saladas e acompanhamentos. Frescor garantido!',
+  },
+];

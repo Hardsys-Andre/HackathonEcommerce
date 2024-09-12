@@ -7,7 +7,9 @@ import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { CartContext } from "../../CartContext.jsx";
 
-const ProductCarousel = ({ title, products }) => {
+
+
+const ProductCarousel = ({ title, produtos }) => {
   const { addToCart } = useContext(CartContext);
 
   return (
@@ -39,8 +41,8 @@ const ProductCarousel = ({ title, products }) => {
         modules={[Navigation]}
         className="mySwiper"
       >
-        {products !== undefined ? (
-          products.map(({ name, price }, index) => (
+        {produtos !== undefined ? (
+          produtos.map(({ name, price, image }, index) => (
             <SwiperSlide
               key={index}
               className="border border-gray-200 hover:border-gray-300 rounded-lg p-4"
@@ -63,11 +65,7 @@ const ProductCarousel = ({ title, products }) => {
                 </div>
                 <div className="product-image md:w-full w-[80px]">
                   <img
-                    src={`./src/assets/${name
-                      .split(" ")[0]
-                      .toLowerCase()
-                      .normalize("NFD")
-                      .replace(/[\u0300-\u036f]/g, "")}.png`}
+                    src={image}
                     alt={name}
                   />
                 </div>
@@ -84,10 +82,11 @@ const ProductCarousel = ({ title, products }) => {
 
 ProductCarousel.propTypes = {
   title: PropTypes.string.isRequired,
-  products: PropTypes.arrayOf(
+  produtos: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
       price: PropTypes.number.isRequired,
+      image: PropTypes.string.isRequired,
     })
   ).isRequired,
 };
