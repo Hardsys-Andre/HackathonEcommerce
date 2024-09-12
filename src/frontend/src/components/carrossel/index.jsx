@@ -48,7 +48,7 @@ const ProductCarousel = ({ title, products }) => {
               <div className="flex flex-row p-5 items-center space-x-6 ">
                 <div className="product-info space-y-3 w-[70%]">
                   <h3 className="font-bold lg:w-[170px] text-[14px] lg:text-xl">{name}</h3>
-                  <hr className="text-darkFadeColor"></hr>
+                  <hr className="text-darkFadeColor" />
                   <div className="flex items-center space-x-3">
                     <p className="product-price font-bold text-[18px] lg:text-2xl">
                       R$ {price.toFixed(2)}
@@ -63,7 +63,7 @@ const ProductCarousel = ({ title, products }) => {
                 </div>
                 <div className="product-image md:w-full w-[80px]">
                   <img
-                    src={`./src/assets/products/${name
+                    src={`./src/assets/${name
                       .split(" ")[0]
                       .toLowerCase()
                       .normalize("NFD")
