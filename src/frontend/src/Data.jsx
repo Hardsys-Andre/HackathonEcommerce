@@ -1,8 +1,9 @@
 export const destaques = [
   {
     id: 1,
-    name: 'Tomate (kg)',
-    price: '6,00',
+    name: 'Tomate',
+    price: 6.00,
+    unit: '(kg)',
     image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/tomate.png',
     category: 'fruta',
     description:
@@ -10,8 +11,9 @@ export const destaques = [
   },
   {
     id: 2,
-    name: 'Alface (500g)',
-    price: '5,00',
+    name: 'Alface',
+    price: 5.00,
+    unit: '(unid)',
     image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/alface.png',
     category: 'Hortaliça',
     description:
@@ -19,8 +21,9 @@ export const destaques = [
   },
   {
     id: 3,
-    name: 'Laranja (kg)',
-    price: '9,00',
+    name: 'Laranja',
+    price: 9.00,
+    unit: '(kg)',
     image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/laranja.png',
     category: 'Fruta',
     description:
@@ -31,8 +34,9 @@ export const destaques = [
 export const produtos = [
   {
     id: 1,
-    name: 'Tomate (kg)',
+    name: 'Tomate',
     price: 6.00,
+    unit: '(kg)',
     image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/tomate.png',
     category: 'Fruta',
     description:
@@ -40,8 +44,9 @@ export const produtos = [
   },
   {
     id: 2,
-    name: 'Laranja (kg)',
-    price: 9.00,
+    name: 'Laranja',
+    price: 9.50,
+    unit: '(kg)',
     image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/laranja.png',
     category: 'Fruta',
     description:
@@ -49,8 +54,9 @@ export const produtos = [
   },
   {
     id: 3,
-    name: 'Banana (kg)',
-    price: 9.00,
+    name: 'Banana',
+    price: 8.70,
+    unit: '(kg)',
     image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/banana.png',
     category: 'Fruta',
     description:
@@ -58,8 +64,9 @@ export const produtos = [
   },
   {
     id: 4,
-    name: 'Limão (kg)',
+    name: 'Limão',
     price: 6.00,
+    unit: '(kg)',
     image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/limao.png',
     category: 'Fruta',
     description:
@@ -67,8 +74,9 @@ export const produtos = [
   },
   {
     id: 5,
-    name: 'Morango (kg)',
+    name: 'Morango',
     price: 12.00,
+    unit: '(cx)',
     image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/morango.png',
     category: 'Fruta',
     description:
@@ -77,8 +85,9 @@ export const produtos = [
 
   {
     id: 6,
-    name: 'Batata (kg)',
+    name: 'Batata',
     price: 8.00,
+    unit: '(kg)',
     image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/batata.png',
     category: 'Legume',
     description:
@@ -86,8 +95,9 @@ export const produtos = [
   },
   {
     id: 7,
-    name: 'Cenoura (kg)',
+    name: 'Cenoura',
     price: 4.00,
+    unit: '(kg)',
     image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/cenoura.png',
     category: 'Legume',
     description:
@@ -95,8 +105,9 @@ export const produtos = [
   },
   {
     id: 8,
-    name: 'Abóbora (kg)',
+    name: 'Abóbora',
     price: 9.00,
+    unit: '(kg)',
     image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/abobora.png',
     category: 'Legume',
     description:
@@ -104,8 +115,9 @@ export const produtos = [
   },
   {
     id: 9,
-    name: 'Alface (500g)',
+    name: 'Alface',
     price: 5.00,
+    unit: '(unid.)',
     image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/alface.png',
     category: 'Verdura',
     description:
@@ -113,8 +125,9 @@ export const produtos = [
   },
   {
     id: 10,
-    name: 'Brócolis (kg)',
+    name: 'Brócolis',
     price: 8.00,
+    unit: '(kg)',
     image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/brocolis.png',
     category: 'Verdura',
     description:
@@ -122,8 +135,9 @@ export const produtos = [
   },
   {
     id: 11,
-    name: 'Couve (kg)',
+    name: 'Couve',
     price: 4.00,
+    unit: '(kg)',
     image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/couve.png',
     category: 'Verdura',
     description:
@@ -131,8 +145,9 @@ export const produtos = [
   },
   {
     id: 12,
-    name: 'Alface (500g)',
+    name: 'Alface',
     price: 5.00,
+    unit: '(unid.)',
     image: 'https://raw.githubusercontent.com/Hardsys-Andre/HackathonEcommerce/main/src/frontend/src/assets/alface.png',
     category: 'Verdura',
     description:

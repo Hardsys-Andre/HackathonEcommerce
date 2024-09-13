@@ -14,7 +14,7 @@ const Contact = () => {
         Clique no botão abaixo e fale com um atendente
       </p>
       <a
-        href="https://wa.me/11999999999"
+        href="https://wa.me/5512991912571" target="_blank"
         className="md:text-[20px] bg-transparent mb-16 md:mb-8 border-2 border-whatsappColor text-whatsappColor px-12 py-3 rounded-full hover:bg-whatsappColor hover:text-white transition-all"
         rel="noopener noreferrer"
       >

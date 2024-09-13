@@ -15,9 +15,9 @@ const Footer = () => {
             </h1>
             <div className="flex gap-3 items-center mb-6">
               <FaPhone />
-              <a href="https://wa.me/11999999999">
+              <a href="https://wa.me/5512991912571" target="_blank">
                 <p className="text-base font-normal font-outfit">
-                  (12)99999-9999
+                  (12)99191-2571
                 </p>
               </a>
             </div>
@@ -37,7 +37,7 @@ const Footer = () => {
             <p className="lg:text-xl font-normal font-outfit mb-4">
               Métodos de pagamento
             </p>
-            <a href="https://wa.me/11999999999">
+            <a href="https://wa.me/5512991912571" target="_blank">
               <p className="lg:text-xl font-normal font-outfit">Contate-nos</p>
             </a>
           </div>

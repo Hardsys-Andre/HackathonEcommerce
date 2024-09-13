@@ -42,14 +42,14 @@ const ProductCarousel = ({ title, produtos }) => {
         className="mySwiper"
       >
         {produtos !== undefined ? (
-          produtos.map(({ name, price, image }, index) => (
+          produtos.map(({ name, price, unit, image }, index) => (
             <SwiperSlide
               key={index}
               className="border border-gray-200 hover:border-gray-300 rounded-lg p-4"
             >
               <div className="flex flex-row p-5 items-center space-x-6 ">
                 <div className="product-info space-y-3 w-[70%]">
-                  <h3 className="font-bold lg:w-[170px] text-[14px] lg:text-xl">{name}</h3>
+                  <h3 className="font-bold lg:w-[170px] text-[14px] lg:text-xl">{name} {unit}</h3>
                   <hr className="text-darkFadeColor" />
                   <div className="flex items-center space-x-3">
                     <p className="product-price font-bold text-[18px] lg:text-2xl">
@@ -57,7 +57,7 @@ const ProductCarousel = ({ title, produtos }) => {
                     </p>
                     <div
                       className="bg-redNormal p-2 rounded-full cursor-pointer"
-                      onClick={() => addToCart({ name, image, price })}
+                      onClick={() => addToCart({ name, image, price, unit })}
                     >
                       <FaPlus className="text-whiteNormal text-[12px]" />
                     </div>

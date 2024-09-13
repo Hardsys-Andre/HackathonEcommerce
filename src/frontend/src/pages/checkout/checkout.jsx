@@ -7,14 +7,13 @@ import Logo from "../../assets/logo-tana-cesta.png";
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-
 const Checkout = () => {
   const navigate = useNavigate();
   const { cartItems, calculateTotal } = useContext(CartContext);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
 
-  const recipientPhoneNumber = "5512999999999";
+  const recipientPhoneNumber = "5512991912571";
 
   const generateOrderNumber = () => {
     return Math.floor(Math.random() * 1000000)

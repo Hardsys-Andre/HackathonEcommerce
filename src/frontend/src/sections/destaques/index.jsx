@@ -44,26 +44,26 @@ const Destaques = () => {
             modules={[Navigation]}
             className="mySwiper highlight-products"
           >
-            {destaques.map(({ name, price, image, description }, index) => (
+            {destaques.map(({ name, price, unit, image, description }, index) => (
               <SwiperSlide
                 key={index}
                 className="product-container bg-whiteNormal lg:px-4 py-2 font-outfit font-medium text-[14px] lg:text-[16px] xl:text-[20px] text-black-normal rounded-lg"
               >
                 <div className="flex flex-row p-7 items-center space-x-6">
                   <div className="product-info space-y-3 w-[70%]">
-                    <h3 className="font-bold">{name}</h3>
+                    <h3 className="font-bold">{name} {unit}</h3>
                     <p className="text-darkFadeColor text-[14px] ">
                       {description}
                     </p>
                     <hr className="text-darkFadeColor"></hr>
                     <div className="flex items-center space-x-3">
                       <p className="product-price font-bold text-2xl">
-                        R$ {price}
+                        R$ {price.toFixed(2)}
                       </p>
                       <div
                         className="bg-redNormal p-2 rounded-full cursor-pointer"
                         onClick={() =>
-                          addToCart({ name, price, image, description })
+                          addToCart({ name, price, image, unit })
                         }
                       >
                         <FaPlus className="text-whiteNormal" />

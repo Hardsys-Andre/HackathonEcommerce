@@ -9,7 +9,7 @@ const Cart = () => {
   const navigate = useNavigate();
 
   const handleQuantityChange = (index, newQuantity) => {
-    if (newQuantity > 0) {
+    if (newQuantity >= 0.5) {
       updateQuantity(index, newQuantity);
     }
   };
@@ -42,12 +42,17 @@ const Cart = () => {
           className="md:w-[250px] w-[200px]"
         />
       </div>
+      <div className="flex flex-col-reverse md:flex-row justify-between md:items-center">
       <div
         onClick={handleClose}
         className="flex gap-2 m-2 text-[12px] md:text-[16px] cursor-pointer items-center"
       >
         <FaPlus className="text-redNormal" />
         Adicionar Produtos | Fechar Cesta
+      </div>
+      <div className="flex text-[12px] text-redNormal justify-center">
+        Atenção, pedido mínimo de 0,5 kg ou 1 unid. por produto.
+      </div>
       </div>
       {cartItems.length > 0 ? (
         <div className="bg-white rounded-lg shadow-md p-6">
@@ -64,7 +69,7 @@ const Cart = () => {
                     className="w-16 h-16 object-cover rounded-md"
                   />
                   <div>
-                    <h3 className="md:text-lg font-medium">{item.name}</h3>
+                    <h3 className="md:text-lg font-medium">{item.name} {item.unit}</h3>
                     <p className="text-gray-600">
                       R$ {parseFloat(item.price).toFixed(2)}
                     </p>
@@ -74,7 +79,7 @@ const Cart = () => {
                   <div className="flex flex-row items-center gap-4 mt-5">
                     <button
                       onClick={() =>
-                        handleQuantityChange(index, item.quantity - 1)
+                        handleQuantityChange(index, item.quantity - 0.5)
                       }
                       className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600"
                     >
@@ -83,7 +88,7 @@ const Cart = () => {
                     <span className="text-lg">{item.quantity}</span>
                     <button
                       onClick={() =>
-                        handleQuantityChange(index, item.quantity + 1)
+                        handleQuantityChange(index, item.quantity + 0.5)
                       }
                       className="bg-green-500 text-white px-3 py-1 rounded hover:bg-green-600"
                     >
