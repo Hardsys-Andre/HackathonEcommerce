@@ -59,11 +59,7 @@ const Cart = () => {
               >
                 <div className="flex items-center space-x-4">
                   <img
-                    src={`./src/assets/products/${item.name
-                      .split(" ")[0]
-                      .toLowerCase()
-                      .normalize("NFD")
-                      .replace(/[\u0300-\u036f]/g, "")}.png`}
+                    src={item.image}
                     alt={item.name}
                     className="w-16 h-16 object-cover rounded-md"
                   />

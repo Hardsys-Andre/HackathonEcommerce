@@ -112,11 +112,7 @@ const Checkout = () => {
                 <div className="flex flex-col md:flex-row items-center space-x-4 justify-between w-full">
                   <div className="flex flex-row justify-start w-full items-center gap-4">
                     <img
-                      src={`./src/assets/products/${item.name
-                        .split(" ")[0]
-                        .toLowerCase()
-                        .normalize("NFD")
-                        .replace(/[\u0300-\u036f]/g, "")}.png`}
+                      src={item.image}
                       alt={item.name}
                       className="w-16 h-16 object-cover rounded-md"
                     />

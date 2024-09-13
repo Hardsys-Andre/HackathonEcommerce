@@ -57,7 +57,7 @@ const ProductCarousel = ({ title, produtos }) => {
                     </p>
                     <div
                       className="bg-redNormal p-2 rounded-full cursor-pointer"
-                      onClick={() => addToCart({ name, price })}
+                      onClick={() => addToCart({ name, image, price })}
                     >
                       <FaPlus className="text-whiteNormal text-[12px]" />
                     </div>
